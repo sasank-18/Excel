@@ -10,7 +10,7 @@ body{
 
 .page-actions-cont{
     height: 3rem;
-    background-color: #218c74;
+    background-color: #40005c;
     display: flex;
     align-items: flex-end;
     padding-left: 0.5rem;
@@ -19,6 +19,7 @@ body{
     margin: 0.5rem;
     color: #f1f2f6;
 }
+
 .cellprops-actions-cont{
     height: 3rem;
     background-color: #ecf0f1;
@@ -31,8 +32,8 @@ body{
     display: inline-block;
     margin-right: 1rem;
     cursor: pointer;
-   
 }
+
 .cellprops-actions-cont > select{
     padding: 0.2rem;
     border: none;
@@ -47,21 +48,23 @@ body{
 
 
 
+
 /* //sheet folder container */
 
 .sheet-actions-cont{
     display: flex;
     align-items: center;
     height: 3rem;
-    background-color: bisque;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     gap: 1rem;
     background-color: #ecf0f1;
+
 }
+
 .sheet-icon-actions-cont{
-   
     margin-right: 0.5rem;
+    cursor: pointer;
 }
 
 .sheet-actions-cont > *{
@@ -72,6 +75,10 @@ body{
     text-decoration: underline;
     font-weight: bold;
     text-decoration-thickness:3px ;
+    cursor: pointer;
+    padding: 3px;
+  background-color:rgb(161, 161, 161);
+  color: #40005c;
 }
 
 .sheets-folder-cont{
@@ -81,9 +88,10 @@ body{
     align-items: flex-end;
     gap: 0.5rem;
     padding-bottom: 0.4rem;
+    overflow: auto;
+    background-color:#ecf0f1;
 }
 
-/* formula container  */
 
 .formula-actions-cont{
     height: 3rem;
@@ -107,6 +115,9 @@ body{
 
 .address-bar{
     width: 6vw;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
 }
 
 .formula-icon{
@@ -127,13 +138,13 @@ body{
     background-color: #ecf0f1;
 } 
 
+
 .top-left-dummy{
     width: 2rem;
     height: 2rem;
     background-color:#747d8c;
     position: fixed;
     z-index: 5;
-   
 }
 
 .address-col-cont{
@@ -157,6 +168,7 @@ body{
     position: sticky;
     left: 2rem;
     top: 0;
+   
 }
 
 .address-col{
@@ -186,8 +198,10 @@ body{
     border: 1px solid #dfe4ea;
     background-color: #ecf0f1;
     outline: none;
-  
+    
 }
+
+
 
 
 .color-prop{
@@ -206,3 +220,69 @@ left: 0;
         display: flex;
   
     }
+
+.deleteMenu{
+    height: auto;
+    width: 22vw;
+    min-width: 20vw;
+    background-color: #40005c;
+    position: absolute;
+    top: 48px;
+    /* left:40%;  */
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: width 1s;
+}
+.paragraph{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.yesButton {
+ 
+    height: 2rem;
+    width: 4rem;
+    /* background-color: #04AA6D; */
+    border: solid 1px;
+    border-radius: 5px;
+    color: white;
+    /* padding: 6px 14px; */
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding-top :6.5px;
+    font-size: 16px;
+    margin-top: 2px;
+    margin-bottom: 16px;
+    margin-right: 14px;
+  }
+
+  .yesButton:hover{
+    border:  1px solid rgb(4, 229, 4);
+    color: rgb(4, 229, 4) ;
+  }
+  .noButton:hover{
+    border:  1px solid rgb(229, 4, 4);
+    color: rgb(229, 4, 4);
+
+  }
+
+  .noButton{
+    height: 2rem;
+    width: 4rem;
+    /* background-color: #a50404;  */
+    border: solid 1px;
+    border-radius: 5px;
+    color: white;
+    /* padding: 8px 14px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding-top :6.5px;
+    font-size: 16px;
+    
+  }
