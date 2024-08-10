@@ -44,6 +44,7 @@ fontSize.addEventListener('change', (e) => {
 
     cell.style.fontSize = `${fontSize.value}px`
 })
+
 fontFamily.addEventListener('change', (e) => {
 
     let [cell, cellProp] = activeCell(addressBar.value);
@@ -59,6 +60,7 @@ fontColor.addEventListener('change', (e) => {
     cellProp.fontColor = fontColor.value;
     cell.style.color = fontColor.value;
 })
+
 BGcolor.addEventListener('change', (e) => {
 
     let [cell, cellProp] = activeCell(addressBar.value);
@@ -105,7 +107,6 @@ function activeCell(address) {
     [i, j] = decodeAddress(address);
     let selector = `.cell[rowId = "${i}"][colId= "${j}"]`
     let singleCell = document.querySelector(selector);
-
     let cellProp = sheetDB[i][j];
     return [singleCell, cellProp];
 }

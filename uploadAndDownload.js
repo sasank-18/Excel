@@ -10,6 +10,7 @@ donwloadBtn.addEventListener('click', (e)=>{
 
     const a = document.createElement("a");
     a.href = URL.createObjectURL(file);
+    console.log(URL.createObjectURL(file))
     a.download = 'SheetData.json';
     a.click();
 })
