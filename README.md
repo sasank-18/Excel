@@ -1,6 +1,6 @@
 Deployed at:- https://excelbook12.netlify.app/
 
-# Excel Clone (HTML, CSS, JavaScript)
+# ExcelBook (HTML, CSS, JavaScript)
 
 A spreadsheet application built from scratch using **plain JavaScript, HTML, and CSS**.  
 This project replicates key features of Excel/Google Sheets, including data binding, formulas, multiple sheets, and clipboard operations — all without external libraries.
